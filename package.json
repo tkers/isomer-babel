@@ -1,0 +1,22 @@
+{
+  "name": "isomer-babel",
+  "version": "0.0.1",
+  "description": "Isomer boilerplate with Webpack and Babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lapixx/isomer-babel.git"
+  },
+  "author": "Tijn Kersjes <tijn@divbyzero.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lapixx/isomer-babel/issues"
+  },
+  "homepage": "https://github.com/Lapixx/isomer-babel#readme",
+  "dependencies": {
+    "isomer": "^0.2.6"
+  }
+}
