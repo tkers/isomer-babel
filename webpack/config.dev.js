@@ -21,6 +21,13 @@ export default {
     ],
 
     module: {
+        preLoaders: [{
+            test: /\.js$/,
+            include: [
+                path.resolve(__dirname, "../js")
+            ],
+            loader: "eslint-loader",
+        }],
         loaders: [{
             test: /\.js$/,
             include: [
@@ -28,6 +35,12 @@ export default {
             ],
             loader: "babel-loader",
         }]
+    },
+
+    eslint: {
+        failOnWarning: false,
+        failOnError: false,
+        emitWarning: true
     },
 
     historyApiFallback: {
