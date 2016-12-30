@@ -4,6 +4,7 @@
   "description": "Isomer boilerplate with Webpack and Babel",
   "main": "js/index.js",
   "scripts": {
+    "start": "babel-node webpack/devServer",
     "build": "babel-node ./node_modules/.bin/webpack --verbose --colors --display-error-details --config webpack/config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,6 +29,7 @@
     "babel-preset-stage-0": "^6.16.0",
     "clean-webpack-plugin": "^0.1.14",
     "copy-webpack-plugin": "^4.0.1",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
