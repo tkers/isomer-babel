@@ -2,8 +2,9 @@
   "name": "isomer-babel",
   "version": "0.0.1",
   "description": "Isomer boilerplate with Webpack and Babel",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
+    "build": "babel-node ./node_modules/.bin/webpack --verbose --colors --display-error-details --config webpack/config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,15 @@
   "homepage": "https://github.com/Lapixx/isomer-babel#readme",
   "dependencies": {
     "isomer": "^0.2.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "clean-webpack-plugin": "^0.1.14",
+    "copy-webpack-plugin": "^4.0.1",
+    "webpack": "^1.14.0"
   }
 }
